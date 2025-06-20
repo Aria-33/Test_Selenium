@@ -1,0 +1,502 @@
+{
+  "id": "1616c1e4-42ac-4f5d-b594-ebf012c30c83",
+  "version": "2.0",
+  "name": "tp_evershop_docker",
+  "url": "http://localhost:3000/admin/login",
+  "tests": [{
+    "id": "101fe14d-9324-4ad4-93fc-b16ca0019715",
+    "name": "CT-CAT-DELETE-003",
+    "commands": [{
+      "id": "f322cea3-094a-475f-9099-6961e29f8100",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/admin/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d548376-70e4-40a0-9d9f-3c51ea934112",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.form-field-container:nth-child(1) > .field-wrapper:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//form[@id='adminLoginForm']/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac87a64a-7658-4ee2-a945-369dc21ca652",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.form-field-container:nth-child(1) > .field-wrapper:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//form[@id='adminLoginForm']/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
+      "value": "oddone.lea@gmail.com"
+    }, {
+      "id": "2b6c7e51-e5b9-409a-8604-3d096bec6775",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-field-container:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='adminLoginForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "a123456789"
+    }, {
+      "id": "19a706a9-8f45-4d44-856a-c4b7027a7a39",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button",
+      "targets": [
+        ["css=.button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='adminLoginForm']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'SIGN IN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd9fc1af-1736-4935-95ef-dd37e5b7374b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Categories",
+      "targets": [
+        ["linkText=Categories", "linkText"],
+        ["css=.root-nav-item:nth-child(2) .nav-item:nth-child(2) > .flex", "css:finder"],
+        ["xpath=//a[contains(text(),'Categories')]", "xpath:link"],
+        ["xpath=//div[@id='app']/div/div[2]/div/div/div/ul/li[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:3000/admin/categories']", "xpath:href"],
+        ["xpath=//li[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Categories')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5bfcc602-e8fb-4d38-a62d-e03c32cc0ba4",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.button > span",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "6b0a51c0-9253-41f0-adcb-3b68cc371534",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button > span",
+      "targets": [
+        ["css=.button > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'New Category')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a449535-7c37-4b97-84ba-5e2ba0c6f184",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=name",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "20ba82c9-577d-49de-82c3-32499cc6ece3",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='categoryForm']/div/div/div/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "985303a1-f406-4e72-a52f-3e94fb25c748",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='categoryForm']/div/div/div/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "Mariage"
+    }, {
+      "id": "1bf8d56d-dff7-4aaf-8b41-cbf065c89a6c",
+      "comment": "",
+      "command": "click",
+      "target": "id=urlKey",
+      "targets": [
+        ["id=urlKey", "id"],
+        ["name=url_key", "name"],
+        ["css=#urlKey", "css:finder"],
+        ["xpath=//input[@id='urlKey']", "xpath:attributes"],
+        ["xpath=//form[@id='categoryForm']/div/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5856f4b-de08-40ca-9b63-031938f1c581",
+      "comment": "",
+      "command": "type",
+      "target": "id=urlKey",
+      "targets": [
+        ["id=urlKey", "id"],
+        ["name=url_key", "name"],
+        ["css=#urlKey", "css:finder"],
+        ["xpath=//input[@id='urlKey']", "xpath:attributes"],
+        ["xpath=//form[@id='categoryForm']/div/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "mariage"
+    }, {
+      "id": "fa11ef16-4607-4c57-95b0-49ef06bdb964",
+      "comment": "",
+      "command": "click",
+      "target": "id=metaTitle",
+      "targets": [
+        ["id=metaTitle", "id"],
+        ["name=meta_title", "name"],
+        ["css=#metaTitle", "css:finder"],
+        ["xpath=//input[@id='metaTitle']", "xpath:attributes"],
+        ["xpath=//form[@id='categoryForm']/div/div/div[2]/div[2]/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "83930e8f-41a8-4e95-baeb-c77094cccf2e",
+      "comment": "",
+      "command": "type",
+      "target": "id=metaTitle",
+      "targets": [
+        ["id=metaTitle", "id"],
+        ["name=meta_title", "name"],
+        ["css=#metaTitle", "css:finder"],
+        ["xpath=//input[@id='metaTitle']", "xpath:attributes"],
+        ["xpath=//form[@id='categoryForm']/div/div/div[2]/div[2]/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Mariage"
+    }, {
+      "id": "2a05b9fa-d51c-4db4-9df0-0e94508a7af7",
+      "comment": "",
+      "command": "click",
+      "target": "id=metakeywords",
+      "targets": [
+        ["id=metakeywords", "id"],
+        ["name=meta_keywords", "name"],
+        ["css=#metakeywords", "css:finder"],
+        ["xpath=//input[@id='metakeywords']", "xpath:attributes"],
+        ["xpath=//form[@id='categoryForm']/div/div/div[2]/div[2]/div/div/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab21a9e6-1e72-4db6-aac1-b7293726be48",
+      "comment": "",
+      "command": "type",
+      "target": "id=metakeywords",
+      "targets": [
+        ["id=metakeywords", "id"],
+        ["name=meta_keywords", "name"],
+        ["css=#metakeywords", "css:finder"],
+        ["xpath=//input[@id='metakeywords']", "xpath:attributes"],
+        ["xpath=//form[@id='categoryForm']/div/div/div[2]/div[2]/div/div/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "mariage"
+    }, {
+      "id": "ab12d30a-da49-408f-ada1-1b0537d16aad",
+      "comment": "",
+      "command": "click",
+      "target": "id=meta_description",
+      "targets": [
+        ["id=meta_description", "id"],
+        ["name=meta_description", "name"],
+        ["css=#meta_description", "css:finder"],
+        ["xpath=//textarea[@id='meta_description']", "xpath:attributes"],
+        ["xpath=//form[@id='categoryForm']/div/div/div[2]/div[2]/div/div/div[4]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ca4c347-d406-4240-8705-455f7660a65c",
+      "comment": "",
+      "command": "type",
+      "target": "id=meta_description",
+      "targets": [
+        ["id=meta_description", "id"],
+        ["name=meta_description", "name"],
+        ["css=#meta_description", "css:finder"],
+        ["xpath=//textarea[@id='meta_description']", "xpath:attributes"],
+        ["xpath=//form[@id='categoryForm']/div/div/div[2]/div[2]/div/div/div[4]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Mariage"
+    }, {
+      "id": "7c7ed8ce-09dd-4e4d-9cee-a4ea31273eae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.primary > span",
+      "targets": [
+        ["css=.primary > span", "css:finder"],
+        ["xpath=//form[@id='categoryForm']/div[2]/button[2]/span", "xpath:idRelative"],
+        ["xpath=//button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3d4f8c5-1a78-4e5b-88d6-572a37c85822",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-icon",
+      "targets": [
+        ["css=.text-icon", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1396d70-8ae8-42ed-9c9d-33e15df526d4",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Mariage",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "4d4b95c7-013d-4cb2-9873-66c5cf66a605",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Mariage",
+      "targets": [
+        ["linkText=Mariage", "linkText"],
+        ["css=tr:nth-child(2) .hover\\3Aunderline", "css:finder"],
+        ["xpath=//a[contains(text(),'Mariage')]", "xpath:link"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div[2]/table/tbody/tr[2]/td[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/categories/edit/bf317829-e5ec-4511-9402-1a560fe2f44b')]", "xpath:href"],
+        ["xpath=//td[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Mariage')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9776e862-1c2b-4754-bb7c-2206b863c38b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.content-wrapper",
+      "targets": [
+        ["css=.content-wrapper", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//body/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff983041-7b53-47ed-be6e-fcfdb5ce1c88",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=name",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "446294df-edab-4834-a34b-259e8107d13e",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='categoryForm']/div/div/div/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "Mariage et pacs"
+    }, {
+      "id": "ff1586c3-c0ab-4602-b72f-8a093aad5d6c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.main-content-inner",
+      "targets": [
+        ["css=.main-content-inner", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fbd01b06-7f9f-49b1-915d-5659da7c23f2",
+      "comment": "",
+      "command": "type",
+      "target": "id=urlKey",
+      "targets": [
+        ["id=urlKey", "id"],
+        ["name=url_key", "name"],
+        ["css=#urlKey", "css:finder"],
+        ["xpath=//input[@id='urlKey']", "xpath:attributes"],
+        ["xpath=//form[@id='categoryForm']/div/div/div[3]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "mariage-et-pacs"
+    }, {
+      "id": "031778f8-f95a-43ff-ad73-eeae822a2531",
+      "comment": "",
+      "command": "click",
+      "target": "css=.content-wrapper",
+      "targets": [
+        ["css=.content-wrapper", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//body/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fccd7489-7604-4b18-8ed7-300a2f6bc413",
+      "comment": "",
+      "command": "type",
+      "target": "id=metaTitle",
+      "targets": [
+        ["id=metaTitle", "id"],
+        ["name=meta_title", "name"],
+        ["css=#metaTitle", "css:finder"],
+        ["xpath=//input[@id='metaTitle']", "xpath:attributes"],
+        ["xpath=//form[@id='categoryForm']/div/div/div[3]/div[2]/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Mariage et pacs"
+    }, {
+      "id": "e674c311-ead4-4332-a642-26119ae0b178",
+      "comment": "",
+      "command": "click",
+      "target": "id=metakeywords",
+      "targets": [
+        ["id=metakeywords", "id"],
+        ["name=meta_keywords", "name"],
+        ["css=#metakeywords", "css:finder"],
+        ["xpath=//input[@id='metakeywords']", "xpath:attributes"],
+        ["xpath=//form[@id='categoryForm']/div/div/div[3]/div[2]/div/div/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a69d776-d7e1-47df-b6ee-e546c26601b6",
+      "comment": "",
+      "command": "type",
+      "target": "id=metakeywords",
+      "targets": [
+        ["id=metakeywords", "id"],
+        ["name=meta_keywords", "name"],
+        ["css=#metakeywords", "css:finder"],
+        ["xpath=//input[@id='metakeywords']", "xpath:attributes"],
+        ["xpath=//form[@id='categoryForm']/div/div/div[3]/div[2]/div/div/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "mariage et pacs"
+    }, {
+      "id": "a96c5200-b870-4c4e-8f2f-ccb816e49c39",
+      "comment": "",
+      "command": "click",
+      "target": "css=.main-content-inner",
+      "targets": [
+        ["css=.main-content-inner", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2121e353-1a84-4e3e-b9d2-58c835f03db0",
+      "comment": "",
+      "command": "type",
+      "target": "id=meta_description",
+      "targets": [
+        ["id=meta_description", "id"],
+        ["name=meta_description", "name"],
+        ["css=#meta_description", "css:finder"],
+        ["xpath=//textarea[@id='meta_description']", "xpath:attributes"],
+        ["xpath=//form[@id='categoryForm']/div/div/div[3]/div[2]/div/div/div[4]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Mariage et pacs"
+    }, {
+      "id": "560ae047-7187-4748-af3a-b17741d40c86",
+      "comment": "",
+      "command": "click",
+      "target": "css=.primary",
+      "targets": [
+        ["css=.primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//form[@id='categoryForm']/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8414cb7-7a27-4a53-9110-ed201430ba34",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-icon",
+      "targets": [
+        ["css=.text-icon", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "0187cb39-d5e8-4005-b7e4-6dfbf9eecd6f",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=tr:nth-child(2) .checkbox-unchecked",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "c3290dbb-5e8d-4abe-bcdc-b62eb92de738",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) .checkbox-unchecked",
+      "targets": [
+        ["css=tr:nth-child(2) .checkbox-unchecked", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div[2]/table/tbody/tr[2]/td/div/div/label/span", "xpath:idRelative"],
+        ["xpath=//td/div/div/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f345be0-6972-4d98-a5d8-8e3a7b3110c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.font-semibold > span",
+      "targets": [
+        ["css=.font-semibold > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div[2]/table/tbody/tr/td/div/a[2]/span", "xpath:idRelative"],
+        ["xpath=//a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Delete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3886b15-75eb-4ce3-bd84-2db5f97c9b7e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.critical > span",
+      "targets": [
+        ["css=.critical > span", "css:finder"],
+        ["xpath=//body[@id='body']/div[2]/div/div/div/div[3]/div/div/button[2]/span", "xpath:idRelative"],
+        ["xpath=//button[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "dd825f57-be6b-42d3-bf9c-76fe0f63b71b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:3000/admin/login", "http://localhost:3000/login/admin"],
+  "plugins": []
+}
