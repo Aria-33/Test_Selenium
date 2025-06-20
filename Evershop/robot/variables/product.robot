@@ -1,2 +1,2 @@
 *** Variables ***
-${PRODUCT_NAME}  Gâteau Orchidées  #bonjour test dzoadnad
+${PRODUCT_NAME}  Gâteau Orchidées  #bonjour test dzoadnad zfesf
