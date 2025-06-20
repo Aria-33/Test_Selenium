@@ -1,2 +1,2 @@
 *** Variables ***
-${PRODUCT_NAME}  Gâteau Orchidées
+${PRODUCT_NAME}  Gâteau Orchidées  #bonjour
